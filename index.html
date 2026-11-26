@@ -4,49 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="InstaFetch brings Reels, Stories, Posts and Profile Picture tools together in one beautifully simple Instagram downloader.">
+  <meta name="description" content="InstaFetch brings Instagram Reels, Stories, Posts and Profile Picture tools together in one simple experience.">
   <title>InstaFetch — Instagram Downloader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="ambient"></div>
   <header class="site-header">
     <a class="brand" href="#" aria-label="InstaFetch home"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.8h10.7L28 13.1v10.2a4.9 4.9 0 0 1-4.9 4.9H8.9A4.9 4.9 0 0 1 4 23.3V8.7a4.9 4.9 0 0 1 4-4.9Z" fill="currentColor"/><path d="M12 21.5 20.8 10M12.4 10h8.4v8.4" fill="none" stroke="#11131a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>insta<span>fetch</span></span></a>
-    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#downloader">Downloader</a><a href="#tools">Tools</a><a href="#how-it-works">How it works</a></nav>
-    <a class="header-action" href="#downloader">Get started <span>↗</span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <a class="header-action" href="#tools">Get started <span>↗</span></a>
   </header>
 
   <main>
-    <section class="hero" id="downloader">
+    <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR INSTAGRAM TOOLKIT</div>
-        <h1>Save the moments<br>that <span>stay with you.</span></h1>
-        <p class="hero-description">One thoughtful place for the Instagram content you’re allowed to keep. Choose a tool, add a link and you’re ready for the next step.</p>
-        <div class="hero-points"><span><i class="check-icon">✓</i> Four focused tools</span><span><i class="check-icon">✓</i> Clean, simple experience</span></div>
-        <a class="hero-link" href="#tools">Explore all tools <span>↓</span></a>
+        <div class="eyebrow"><span></span> YOUR INSTAGRAM TOOLKIT</div>
+        <h1>Good moments.<br><em>Kept simple.</em></h1>
+        <p>Choose what you want to save. Four useful tools, one clean experience.</p>
       </div>
-      <div class="hero-art" aria-label="Abstract InstaFetch visual">
-        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
         <div class="art-glow"></div>
-        <div class="story-stack">
-          <div class="story-card story-back"><div class="story-back-orb"></div><span>YOUR MOMENTS</span></div>
-          <div class="story-card story-front"><div class="story-top"><span class="story-avatar">if</span><span>INSTAFETCH STUDIO</span><b>•••</b></div><div class="story-image"><div class="story-sun"></div><div class="story-hill hill-one"></div><div class="story-hill hill-two"></div><span>KEEP THE GOOD</span></div><div class="story-bottom"><span>01 / COLLECTION</span><span>✳</span></div></div>
+        <div class="preview-card">
+          <div class="preview-head"><span class="preview-avatar">if</span><span>YOUR MOMENTS</span><b>✳</b></div>
+          <div class="preview-scene"><span class="sun"></span><span class="mountain mountain-a"></span><span class="mountain mountain-b"></span><b>KEEP THE GOOD</b></div>
+          <div class="preview-foot"><span>INSTAFETCH COLLECTION</span><span>01 / 04</span></div>
         </div>
-        <div class="art-label label-top"><span class="label-icon">↗</span><span><b>Made for moments</b><small>Simple by design</small></span></div>
-        <div class="art-label label-bottom"><span class="label-spark">✳</span><span><b>One clean space</b><small>Four useful tools</small></span></div>
-        <div class="art-index">01 <span>—</span> INSTAFETCH</div>
+        <div class="float-tag"><span>↗</span><div><b>One simple space</b><small>Four focused tools</small></div></div>
       </div>
-      <div class="hero-foot"><span>THOUGHTFULLY BUILT FOR YOUR CONTENT</span><span>SCROLL TO DISCOVER ↓</span></div>
     </section>
 
     <section class="tool-section" id="tools">
-      <div class="section-topline"><span class="section-tag">THE TOOLKIT <b>✳</b></span><span class="section-side-note">FOUR TOOLS. ONE EXPERIENCE.</span></div>
-      <div class="tool-heading"><div><h2>What would you like<br><em>to save today?</em></h2><p>Choose the format you need. InstaFetch keeps every tool clear and easy to find.</p></div><div class="tool-count"><strong>04</strong><span>TOOLS<br>AVAILABLE</span></div></div>
-
+      <div class="section-heading"><div><span class="section-kicker">THE TOOLKIT <i>✳</i></span><h2>What are you <em>looking for?</em></h2></div><span class="tool-total">04 <small>TOOLS</small></span></div>
       <div class="workspace">
         <div class="workspace-tabs" role="tablist" aria-label="Choose an Instagram tool">
           <button class="tool-tab active" type="button" role="tab" aria-selected="true" data-type="reels"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="m10 8.5 6 3.5-6 3.5z"/></svg></span><span class="tab-copy"><b>Reels</b><small>Short videos</small></span><span class="tab-arrow">↗</span></button>
@@ -54,34 +46,22 @@
           <button class="tool-tab" type="button" role="tab" aria-selected="false" data-type="posts"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m4.5 17 5-5 3.5 3 2.5-2 4 4"/></svg></span><span class="tab-copy"><b>Posts</b><small>Photos & videos</small></span><span class="tab-arrow">↗</span></button>
           <button class="tool-tab" type="button" role="tab" aria-selected="false" data-type="profile"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.4 3.1-5.2 7-5.2s6.3 1.8 7 5.2"/></svg></span><span class="tab-copy"><b>Profile Picture</b><small>Profile images</small></span><span class="tab-arrow">↗</span></button>
         </div>
-
         <div class="workspace-main">
           <div class="workspace-intro"><div class="workspace-icon" id="active-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="m10 8.5 6 3.5-6 3.5z"/></svg></div><div><span class="mini-label" id="tool-kicker">INSTAGRAM REELS</span><h3 id="tool-title">Reels Downloader</h3><p id="tool-description">Keep videos you created or have permission to save.</p></div></div>
           <form id="download-form" novalidate>
             <label for="instagram-url">PASTE YOUR INSTAGRAM LINK</label>
-            <div class="url-input-wrap"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l2.1-2.1a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-2.1 2.1a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></svg></span><input id="instagram-url" type="url" placeholder="https://www.instagram.com/reel/..." autocomplete="url" required><button id="paste-button" type="button">Paste link</button></div>
-            <button class="primary-button" type="submit"><span>Continue</span><span class="button-arrow">→</span></button>
+            <div class="url-input-wrap"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l2.1-2.1a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-2.1 2.1a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></svg></span><input id="instagram-url" type="url" placeholder="https://www.instagram.com/reel/..." autocomplete="url" required><button id="paste-button" type="button">Paste</button></div>
+            <button class="primary-button" type="submit"><span>Continue</span><span>→</span></button>
             <p class="form-message" id="form-message" aria-live="polite">Only submit content you own or have permission to access.</p>
           </form>
-          <div class="workspace-foot"><span><i class="tiny-shield">✓</i> Respect creators</span><span>Designed for mobile & desktop</span></div>
+          <div class="workspace-foot"><span><i>✓</i> Respect creators</span><span>Simple by design</span></div>
         </div>
       </div>
-      <p class="section-disclaimer">Access to Instagram media depends on Meta’s supported permissions and the account that authorizes the app.</p>
+      <p class="section-note">Media access depends on Meta’s supported permissions and the account that authorizes the app.</p>
     </section>
-
-    <section class="how-section" id="how-it-works">
-      <div class="how-heading"><div class="section-tag">A SIMPLE FLOW <b>✳</b></div><h2>Less fuss. <em>More focus.</em></h2><p>Getting started should feel effortless. Here’s the simple path through InstaFetch.</p></div>
-      <div class="steps">
-        <article class="step-card"><span class="step-number">01</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v13H4z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Choose your tool</h3><p>Select Reels, Stories, Posts or Profile Picture from the toolkit.</p></article>
-        <article class="step-card"><span class="step-number">02</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 12.5 11 15l5-6"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Add your link</h3><p>Enter the Instagram link that matches the selected format.</p></article>
-        <article class="step-card"><span class="step-number">03</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4"/><path d="M5 17v3h14v-3"/></svg></div><h3>Preview & save</h3><p>Once the supported Meta connection is configured, available media can be previewed and saved.</p></article>
-      </div>
-    </section>
-
-    <section class="closing-band"><div class="closing-mark">✳</div><div><span>THE INSTAfetch PROMISE</span><h2>Keep it simple.<br><em>Keep it thoughtful.</em></h2></div><a href="#downloader">Back to downloader <b>↗</b></a></section>
   </main>
 
-  <footer class="site-footer"><div class="footer-main"><a class="brand" href="#"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.8h10.7L28 13.1v10.2a4.9 4.9 0 0 1-4.9 4.9H8.9A4.9 4.9 0 0 1 4 23.3V8.7a4.9 4.9 0 0 1 4-4.9Z" fill="currentColor"/><path d="M12 21.5 20.8 10M12.4 10h8.4v8.4" fill="none" stroke="#11131a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>insta<span>fetch</span></span></a><p>A little space for the moments worth keeping.</p><a class="footer-top" href="#">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> InstaFetch</span><span>Use responsibly · Respect creators</span></div></footer>
+  <footer class="site-footer"><a class="brand" href="#"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.8h10.7L28 13.1v10.2a4.9 4.9 0 0 1-4.9 4.9H8.9A4.9 4.9 0 0 1 4 23.3V8.7a4.9 4.9 0 0 1 4-4.9Z" fill="currentColor"/><path d="M12 21.5 20.8 10M12.4 10h8.4v8.4" fill="none" stroke="#11131a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>insta<span>fetch</span></span></a><span>© <span id="year"></span> InstaFetch · Respect creators</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
