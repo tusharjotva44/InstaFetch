@@ -1,72 +1,87 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#101114">
-  <meta name="description" content="InstaFetch — a polished space to organise and save Instagram content you own or have permission to download.">
-  <title>InstaFetch — Keep what moves you</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="InstaFetch brings Reels, Stories, Posts and Profile Picture tools together in one beautifully simple Instagram downloader.">
+  <title>InstaFetch — Instagram Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#"><span class="brand-mark">i<span>f</span></span><span>insta<span class="brand-accent">fetch</span></span></a>
-  <nav aria-label="Main navigation"><a href="#download">Downloader</a><a href="#features">Features</a><a href="#how">How it works</a></nav>
-  <a class="nav-cta" href="#download">Get started <span>↗</span></a>
-</header>
-<main>
-<section class="hero">
-  <div class="hero-grid"></div><div class="hero-copy">
-    <div class="eyebrow"><span class="pulse"></span> YOUR MOMENTS. YOUR COLLECTION.</div>
-    <h1>Make the scroll<br> <span>something to keep.</span></h1>
-    <p class="hero-lede">A cleaner way to collect the Instagram moments you love. Choose your format, add a link, and keep everything in one simple place.</p>
-    <div class="hero-actions"><a class="button button-primary" href="#download">Explore InstaFetch <span>↗</span></a><a class="text-link" href="#how">See how it works <span>↓</span></a></div>
-    <div class="hero-note"><span class="note-icon">✳</span><span><strong>Designed to feel effortless.</strong><br>Less clutter. More of what matters.</span></div>
-  </div>
-  <div class="hero-visual" aria-label="Abstract InstaFetch media preview">
-    <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-    <div class="visual-glow"></div>
-    <div class="preview-window"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>YOUR COLLECTION</span><b>•••</b></div>
-      <div class="preview-heading"><small>CURATED BY YOU</small><h2>Good things<br><em>stay with you.</em></h2></div>
-      <div class="preview-art"><div class="art-sun"></div><div class="art-shape shape-a"></div><div class="art-shape shape-b"></div><span>KEEP THE FEELING.</span></div>
-      <div class="preview-footer"><span>✦ &nbsp; 01 / MOMENTS</span><b>INSTAfetch</b></div>
-    </div>
-    <div class="float-chip chip-top"><span class="chip-symbol">▶</span><span><b>Reels</b><small>Moments in motion</small></span><strong>↗</strong></div>
-    <div class="float-chip chip-bottom"><span class="chip-symbol chip-image">▧</span><span><b>Posts</b><small>Worth a second look</small></span><strong>↗</strong></div>
-    <div class="visual-caption">A LITTLE SPACE FOR THE GOOD STUFF <span>✳</span></div>
-  </div>
-  <div class="hero-bottom"><span>01 — THE SIMPLE WAY TO SAVE</span><span>SCROLL TO EXPLORE ↓</span></div>
-</section>
-<section class="download-section" id="download">
-  <div class="section-kicker">THE INSTAfetch TOOLKIT <span>✳</span></div>
-  <div class="download-layout"><div class="download-intro"><h2>What are we<br><em>keeping today?</em></h2><p>Pick a format and paste a link to content you own or have permission to save.</p><div class="trust-line"><span>✦</span> No account needed for this demo</div></div>
-  <div class="tool-card"><div class="tool-card-head"><div><small>STEP 01 / CHOOSE A FORMAT</small><h3>Your downloader</h3></div><span class="step-count">01<span>/03</span></span></div>
-    <div class="format-grid" role="tablist" aria-label="Choose media format">
-      <button class="format-option active" type="button" data-type="reels" role="tab" aria-selected="true"><span class="format-icon">▶</span><span>Reels</span><small>Short videos</small></button>
-      <button class="format-option" type="button" data-type="posts" role="tab" aria-selected="false"><span class="format-icon">▧</span><span>Posts</span><small>Photos & videos</small></button>
-      <button class="format-option" type="button" data-type="stories" role="tab" aria-selected="false"><span class="format-icon">◉</span><span>Stories</span><small>Available stories</small></button>
-      <button class="format-option" type="button" data-type="profile" role="tab" aria-selected="false"><span class="format-icon">◎</span><span>Profile</span><small>Profile picture</small></button>
-    </div>
-    <form id="fetch-form" novalidate><label for="instagram-url"><span class="label-index">02</span><span id="url-label">PASTE YOUR REEL LINK</span></label>
-      <div class="url-field"><span class="url-prefix">↗</span><input id="instagram-url" type="url" placeholder="https://www.instagram.com/reel/..." autocomplete="url" required><button type="button" id="paste-button">PASTE</button></div>
-      <button class="fetch-button" type="submit"><span>Continue</span><b>→</b></button>
-      <p class="form-message" id="form-message" aria-live="polite">Only use content you own or are authorised to save.</p>
-    </form>
-    <div class="tool-card-foot"><span>✦ Thoughtfully simple</span><span>Built for mobile + desktop</span></div>
-  </div></div>
-</section>
-<section class="features-section" id="features"><div class="section-heading"><div class="section-kicker">FOUR WAYS TO COLLECT <span>✳</span></div><h2>One tool. <em>Your kind of content.</em></h2><p>Everything has its place. Find the format you need and get started.</p></div>
-  <div class="feature-grid">
-    <article class="feature-card"><div class="feature-top"><span class="feature-icon">▶</span><span>01 / VIDEO</span></div><h3>Reels that move you.</h3><p>Keep eligible public reels you created or have permission to save.</p><a href="#download" data-jump="reels">Open Reels <b>↗</b></a></article>
-    <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-lilac">▧</span><span>02 / GALLERY</span></div><h3>Posts worth keeping.</h3><p>Collect photos and videos from posts you are allowed to download.</p><a href="#download" data-jump="posts">Open Posts <b>↗</b></a></article>
-    <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-blue">◉</span><span>03 / STORIES</span></div><h3>Stories, thoughtfully.</h3><p>Work with stories only when they are accessible and you have permission.</p><a href="#download" data-jump="stories">Open Stories <b>↗</b></a></article>
-    <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-green">◎</span><span>04 / PROFILE</span></div><h3>Profile picture view.</h3><p>View profile imagery that is publicly accessible and permitted to save.</p><a href="#download" data-jump="profile">Open Profile <b>↗</b></a></article>
-  </div>
-</section>
-<section class="how-section" id="how"><div class="section-heading"><div class="section-kicker">NO LEARNING CURVE <span>✳</span></div><h2>Three steps. <em>That's it.</em></h2></div>
-  <div class="steps-grid"><article><span>01</span><h3>Choose your format</h3><p>Select Reels, Posts, Stories or Profile Picture.</p></article><article><span>02</span><h3>Paste your link</h3><p>Add a valid Instagram link for content you are authorised to save.</p></article><article><span>03</span><h3>Preview and save</h3><p>When a compliant fetch service is connected, preview and save supported media.</p></article></div>
-</section>
-</main>
-<footer><div class="footer-main"><a class="brand" href="#"><span class="brand-mark">i<span>f</span></span><span>insta<span class="brand-accent">fetch</span></span></a><p>Keep what moves you. Respect the people who make it.</p><a href="#download">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> InstaFetch</span><span>Use responsibly · Respect creators</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="InstaFetch home"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.8h10.7L28 13.1v10.2a4.9 4.9 0 0 1-4.9 4.9H8.9A4.9 4.9 0 0 1 4 23.3V8.7a4.9 4.9 0 0 1 4-4.9Z" fill="currentColor"/><path d="M12 21.5 20.8 10M12.4 10h8.4v8.4" fill="none" stroke="#11131a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>insta<span>fetch</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#downloader">Downloader</a><a href="#tools">Tools</a><a href="#how-it-works">How it works</a></nav>
+    <a class="header-action" href="#downloader">Get started <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="downloader">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR INSTAGRAM TOOLKIT</div>
+        <h1>Save the moments<br>that <span>stay with you.</span></h1>
+        <p class="hero-description">One thoughtful place for the Instagram content you’re allowed to keep. Choose a tool, add a link and you’re ready for the next step.</p>
+        <div class="hero-points"><span><i class="check-icon">✓</i> Four focused tools</span><span><i class="check-icon">✓</i> Clean, simple experience</span></div>
+        <a class="hero-link" href="#tools">Explore all tools <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Abstract InstaFetch visual">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-glow"></div>
+        <div class="story-stack">
+          <div class="story-card story-back"><div class="story-back-orb"></div><span>YOUR MOMENTS</span></div>
+          <div class="story-card story-front"><div class="story-top"><span class="story-avatar">if</span><span>INSTAFETCH STUDIO</span><b>•••</b></div><div class="story-image"><div class="story-sun"></div><div class="story-hill hill-one"></div><div class="story-hill hill-two"></div><span>KEEP THE GOOD</span></div><div class="story-bottom"><span>01 / COLLECTION</span><span>✳</span></div></div>
+        </div>
+        <div class="art-label label-top"><span class="label-icon">↗</span><span><b>Made for moments</b><small>Simple by design</small></span></div>
+        <div class="art-label label-bottom"><span class="label-spark">✳</span><span><b>One clean space</b><small>Four useful tools</small></span></div>
+        <div class="art-index">01 <span>—</span> INSTAFETCH</div>
+      </div>
+      <div class="hero-foot"><span>THOUGHTFULLY BUILT FOR YOUR CONTENT</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="tool-section" id="tools">
+      <div class="section-topline"><span class="section-tag">THE TOOLKIT <b>✳</b></span><span class="section-side-note">FOUR TOOLS. ONE EXPERIENCE.</span></div>
+      <div class="tool-heading"><div><h2>What would you like<br><em>to save today?</em></h2><p>Choose the format you need. InstaFetch keeps every tool clear and easy to find.</p></div><div class="tool-count"><strong>04</strong><span>TOOLS<br>AVAILABLE</span></div></div>
+
+      <div class="workspace">
+        <div class="workspace-tabs" role="tablist" aria-label="Choose an Instagram tool">
+          <button class="tool-tab active" type="button" role="tab" aria-selected="true" data-type="reels"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="m10 8.5 6 3.5-6 3.5z"/></svg></span><span class="tab-copy"><b>Reels</b><small>Short videos</small></span><span class="tab-arrow">↗</span></button>
+          <button class="tool-tab" type="button" role="tab" aria-selected="false" data-type="stories"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 2.8h6M21.2 9v6M9 21.2h6M2.8 9v6"/></svg></span><span class="tab-copy"><b>Stories</b><small>24-hour moments</small></span><span class="tab-arrow">↗</span></button>
+          <button class="tool-tab" type="button" role="tab" aria-selected="false" data-type="posts"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m4.5 17 5-5 3.5 3 2.5-2 4 4"/></svg></span><span class="tab-copy"><b>Posts</b><small>Photos & videos</small></span><span class="tab-arrow">↗</span></button>
+          <button class="tool-tab" type="button" role="tab" aria-selected="false" data-type="profile"><span class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.4 3.1-5.2 7-5.2s6.3 1.8 7 5.2"/></svg></span><span class="tab-copy"><b>Profile Picture</b><small>Profile images</small></span><span class="tab-arrow">↗</span></button>
+        </div>
+
+        <div class="workspace-main">
+          <div class="workspace-intro"><div class="workspace-icon" id="active-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="m10 8.5 6 3.5-6 3.5z"/></svg></div><div><span class="mini-label" id="tool-kicker">INSTAGRAM REELS</span><h3 id="tool-title">Reels Downloader</h3><p id="tool-description">Keep videos you created or have permission to save.</p></div></div>
+          <form id="download-form" novalidate>
+            <label for="instagram-url">PASTE YOUR INSTAGRAM LINK</label>
+            <div class="url-input-wrap"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l2.1-2.1a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-2.1 2.1a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></svg></span><input id="instagram-url" type="url" placeholder="https://www.instagram.com/reel/..." autocomplete="url" required><button id="paste-button" type="button">Paste link</button></div>
+            <button class="primary-button" type="submit"><span>Continue</span><span class="button-arrow">→</span></button>
+            <p class="form-message" id="form-message" aria-live="polite">Only submit content you own or have permission to access.</p>
+          </form>
+          <div class="workspace-foot"><span><i class="tiny-shield">✓</i> Respect creators</span><span>Designed for mobile & desktop</span></div>
+        </div>
+      </div>
+      <p class="section-disclaimer">Access to Instagram media depends on Meta’s supported permissions and the account that authorizes the app.</p>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="how-heading"><div class="section-tag">A SIMPLE FLOW <b>✳</b></div><h2>Less fuss. <em>More focus.</em></h2><p>Getting started should feel effortless. Here’s the simple path through InstaFetch.</p></div>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v13H4z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Choose your tool</h3><p>Select Reels, Stories, Posts or Profile Picture from the toolkit.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 12.5 11 15l5-6"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Add your link</h3><p>Enter the Instagram link that matches the selected format.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4"/><path d="M5 17v3h14v-3"/></svg></div><h3>Preview & save</h3><p>Once the supported Meta connection is configured, available media can be previewed and saved.</p></article>
+      </div>
+    </section>
+
+    <section class="closing-band"><div class="closing-mark">✳</div><div><span>THE INSTAfetch PROMISE</span><h2>Keep it simple.<br><em>Keep it thoughtful.</em></h2></div><a href="#downloader">Back to downloader <b>↗</b></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand" href="#"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.8h10.7L28 13.1v10.2a4.9 4.9 0 0 1-4.9 4.9H8.9A4.9 4.9 0 0 1 4 23.3V8.7a4.9 4.9 0 0 1 4-4.9Z" fill="currentColor"/><path d="M12 21.5 20.8 10M12.4 10h8.4v8.4" fill="none" stroke="#11131a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>insta<span>fetch</span></span></a><p>A little space for the moments worth keeping.</p><a class="footer-top" href="#">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> InstaFetch</span><span>Use responsibly · Respect creators</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
